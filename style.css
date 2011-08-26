@@ -108,3 +108,61 @@ body{
 	top:1px;
 	left:40px;
 }
+/*	Tartalom doboz részletei 	*/
+/*	 -Oldalsáv doboz részletei*/
+#oldal_sav{
+	width:200px;
+	min-height:700px;
+	float:left;
+}
+.cetli{
+}
+#fo_elvalaszto{
+	width:1px;
+	min-height:879px;
+	background-color:#8c989f;
+	float:left;
+	padding-top:21px;
+}
+/*	 -Fő doboz részletei			*/
+#fo_doboz{
+	width:699px;
+	min-height:700px;
+	float:right;
+}
+
+/*	Separátor*/
+hr{
+	background:url("img/hr_bg.png") 20px 0px no-repeat;
+	width:699px;
+	height:2px;
+	border:0px;
+}
+/* Bekezdések formázása*/
+p.cim{
+	color:#b9dee4;
+	font-weight:bold;
+	font-size:18px;
+	font-family:Arial;
+	margin:15px 0px 5px 25px;
+}
+
+/* Message box-ok*/
+.error{
+	width:644px;
+	height:83px;
+	background-image:url("img/error_box.png");
+	margin: 10px 0px 15px 25px;
+	padding:5px;
+	position:relative;
+}
+.error .title{
+	color:#e7a2a2;
+	font-weight:bold;
+	font-size:20px;
+	font-family:Arial;
+}
+.error .desc{
+	color:#ddc2c2;
+	font-size:18px;
+}
