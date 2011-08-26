@@ -16,6 +16,12 @@ body{
 	background-image:url("img/bg_effect.png");
 	position:absolute;
 }
+#body_eff_tuk{
+	width:900px;
+	height:100px;
+	margin:0px auto;
+	background-image:url("img/tukor.png");
+}
 #menu{
 	width:900px;
 	height:33px;
@@ -23,6 +29,8 @@ body{
 	margin-top:100px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	-moz-box-shadow: 2px 2px 4px #333;
+	-webkit-box-shadow: 2px 2px 4px #333;
 }
 #tartalom{
 	width:900px;
@@ -31,6 +39,8 @@ body{
 	min-height:1200px;/*!!!!!!*/
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	-moz-box-shadow: 2px 2px 5px #333;
+	-webkit-box-shadow: 2px 2px 5px #333;
 }
 #lab{
 	width:900px;
@@ -39,6 +49,8 @@ body{
 	margin-top:7px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	-moz-box-shadow: 2px 2px 4px #333;
+	-webkit-box-shadow: 2px 2px 4px #333;
 }
 /* Menüpontok formázása */
 #menu ul{
@@ -214,6 +226,14 @@ body{
 	position:absolute;
 	top:0px;
 }
+#lab p.cim{
+	color:#97c4cb;
+	font-weight:bold;
+	font-size:20px;
+	font-family:Verdana;
+	margin:10px 5px 5px 25px;
+	text-decoration:underline;
+}
 #fo_doboz a{
 	color:#e7ed9f;
 	font-weight:bold;
@@ -267,4 +287,55 @@ body{
 }
 .succes .desc{
 	color:#c5f6b4;
+}
+
+/*	Lábléc formázása 	*/
+#lab .bal{
+	float:left;
+	width:299px;
+	height:300px;
+	border-right:1px solid #8c989f;
+}
+#lab .koz{
+	float:left;
+	width:299px;
+	height:300px;
+	border-right:1px solid #8c989f;
+}
+#lab .jobb{
+	width:299px;
+	height:300px;
+	float:right;
+}
+/***************************/
+#lab ul{
+	margin-left:-190px;
+}
+#lab a,#lab a.ala,#lab a.kuls{
+	color:#ecedc2;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:14px;
+	font-family:Verdana;
+}
+#lab a.kuls{
+	color:#c8f4d9;
+	margin:5px 0px 5px 45px;
+}
+#lab a.ala{
+	color:#f6f786;
+}
+#lab a:hover{
+	color:#fff;
+	text-decoration:underline;
+}
+#lab li{
+	list-style-image:url("img/ico1.png");
+	margin:5px;
+	text-align:center;
+}
+#lab li.al{
+	list-style-image:url("img/ico2.png");
+	margin:5px 0px 5px 250px;
+	text-align:center;
 }
