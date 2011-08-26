@@ -3,13 +3,11 @@ body{
 	background-color:#fff;
 	background-image:url("img/bg_racs.png");
 	margin:0px;
+	color:#fff;
 }
 #contener{
 	width:900px;
-	min-height:1200px;
 	margin:0px auto;
-	
-	/*background-color:red;*/
 }
 #body_eff{
 	min-width:900px;
@@ -28,9 +26,9 @@ body{
 }
 #tartalom{
 	width:900px;
-	min-height:900px;
 	background-image:url("img/tart_bg.png");
 	margin-top:7px;
+	min-height:1200px;/*!!!!!!*/
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
@@ -119,7 +117,7 @@ body{
 }
 #fo_elvalaszto{
 	width:1px;
-	min-height:879px;
+	min-height:879px;/*!!!!!*/
 	background-color:#8c989f;
 	float:left;
 	padding-top:21px;
@@ -138,17 +136,31 @@ hr{
 	height:2px;
 	border:0px;
 }
-/* Bekezdések formázása*/
-p.cim{
+/* Bekezdések formázása, linkek formázása*/
+#fo_doboz p{
+	color:#b9dee4;
+	margin: 10px 30px 10px 30px;
+	text-align:justify;
+}
+#fo_doboz p.cim{
 	color:#b9dee4;
 	font-weight:bold;
 	font-size:18px;
 	font-family:Arial;
 	margin:15px 0px 5px 25px;
 }
+#fo_doboz a{
+	color:#e7ed9f;
+	font-weight:bold;
+	text-decoration:none;
+}
+#fo_doboz a:hover{
+	text-decoration:underline;
+}
+
 
 /* Message box-ok*/
-.error{
+.error,.warning,.succes{
 	width:644px;
 	height:83px;
 	background-image:url("img/error_box.png");
@@ -156,13 +168,36 @@ p.cim{
 	padding:5px;
 	position:relative;
 }
-.error .title{
+.error .title,.warning .title,.succes .title{
 	color:#e7a2a2;
 	font-weight:bold;
 	font-size:20px;
 	font-family:Arial;
+	position:absolute;
+	top:0px;
+	left:5px;
 }
-.error .desc{
+.error .desc,.warning .desc,.succes .desc{
 	color:#ddc2c2;
 	font-size:18px;
+	position:absolute;
+	left:25px;
+}
+.warning {
+	background-image:url("img/warning_box.png");
+}
+.warning .title{
+	color:#e9e2b2;
+}
+.warning .desc{
+	color:#e1dec0;
+}
+.succes {
+	background-image:url("img/succes_box.png");
+}
+.succes .title{
+	color:#b2e9b7;
+}
+.succes .desc{
+	color:#c5f6b4;
 }
