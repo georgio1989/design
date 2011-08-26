@@ -41,3 +41,41 @@ body{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
+#menu ul{
+	margin-left:-40px;
+}
+#menu a{
+	color:#f4f5f6;
+	text-decoration:none;
+}
+#menu a:hover{
+	color:#9f9;
+}
+#menu a.akt{
+	color:#cff;
+}
+#menu li.sima:hover{
+	background-image:url("img/menu_hov.png");
+	border:1px solid #3f4244;
+	width:98px;
+	height:21px;
+	margin:4px 5px 5px 5px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+#menu li.akt{
+	background-image:url("img/menu_akt.png");
+	border-bottom:1px solid #777a7c;
+	width:100px;
+	height:21px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+#menu li{
+	float:left;
+	list-style-type:none;
+	width:100px;
+	height:23px;
+	margin:5px;
+	text-align:center;
+}
