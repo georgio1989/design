@@ -121,8 +121,42 @@ body{
 	position:relative;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
-	-moz-box-shadow: 4px 4px 10px #000;
-	-webkit-box-shadow: 4px 4px 10px #000;
+	-moz-box-shadow: 2px 2px 10px #333;
+	-webkit-box-shadow: 2px 2px 10px #333;
+}
+.cetli .spacer{
+	width:1px;
+	height:1px;
+	margin:12px;
+}
+.cetli .tit{
+	float:left;
+	color:#aec6ca;
+	margin:0px 0px 10px 10px;
+	font-weight:bold;
+	font-size:18px;
+	font-family:Arial;
+	margin-bottom:10px;
+}.cetli .dat{
+	float:right;
+	color:#bbf6d5;
+	margin:0px 10px 10px 0px;
+	font-weight:bold;
+	font-size:18px;
+	font-family:Arial;
+}
+.cetli input.kilepes:hover{
+	background-color:#7d8488;
+}
+.cetli input.kilepes{
+	width:121px;
+	height:34px;
+	background-image:url("img/kilepes.png");
+	background-color:#6b7175;
+	border:0px;
+	margin:10px 5px 5px 15px;
+	-moz-box-shadow: 2px 2px 10px #333;
+	-webkit-box-shadow: 2px 2px 10px #333;
 }
 .lap_effect{
 	width:55px;
@@ -147,11 +181,18 @@ body{
 }
 
 /*	Separátor*/
-hr{
+#fo_doboz hr,.cetli hr{
 	background:url("img/hr_bg.png") 20px 0px no-repeat;
 	width:699px;
 	height:2px;
 	border:0px;
+}
+.cetli hr{
+	background:url("img/cetli_hr.png") 0px 0px no-repeat;
+	width:147px;
+	position:absolute;
+	top:30px;
+	left:5px;
 }
 /* Bekezdések formázása, linkek formázása*/
 #fo_doboz p{
@@ -159,12 +200,19 @@ hr{
 	margin: 10px 30px 10px 30px;
 	text-align:justify;
 }
-#fo_doboz p.cim{
+#fo_doboz p.cim,.cetli p.cim{
 	color:#b9dee4;
 	font-weight:bold;
 	font-size:18px;
 	font-family:Arial;
 	margin:15px 0px 5px 25px;
+}
+.cetli p.cim{
+	color:#ecf4f9;
+	font-size:22px;
+	margin:10px 5px 5px 25px;
+	position:absolute;
+	top:0px;
 }
 #fo_doboz a{
 	color:#e7ed9f;
@@ -184,6 +232,8 @@ hr{
 	margin: 10px 0px 15px 25px;
 	padding:5px;
 	position:relative;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
 .error .title,.warning .title,.succes .title{
 	color:#e7a2a2;
