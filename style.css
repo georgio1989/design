@@ -309,7 +309,7 @@ body{
 }
 /***************************/
 #lab ul{
-	margin-left:-190px;
+	/*margin-left:-190px;*/
 }
 #lab a,#lab a.ala,#lab a.kuls{
 	color:#ecedc2;
@@ -332,10 +332,8 @@ body{
 #lab li{
 	list-style-image:url("img/ico1.png");
 	margin:5px;
-	text-align:center;
 }
 #lab li.al{
 	list-style-image:url("img/ico2.png");
-	margin:5px 0px 5px 250px;
-	text-align:center;
+	margin:5px 0px 5px 10px;
 }
