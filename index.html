@@ -1,1 +1,33 @@
-﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" media="screen" href="style.css" type="text/css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.js"></script>
+        <title>Kezdőlap</title>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var x=$('div#center').height();
+                if(x>1000){
+                    x+=250;
+                    $('div#site').css('height',x);
+                }
+            });
+        </script>
+    </head>
+    <body>
+			<div id="body_eff">
+				<div id="contener">
+					<div id="menu">
+						
+					</div>
+					<div id="tartalom">
+						
+					</div>
+					<div id="lab">
+						
+					</div>
+				</div>
+			</div>
+    </body>
+</html>
