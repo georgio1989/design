@@ -73,7 +73,7 @@ body{
 	color:#f4f5f6;
 	text-decoration:none;
 }
-#menu a:hover{
+#menu a:hover,#menu a.aktual{
 	color:#9f9;
 }
 #menu a.akt{

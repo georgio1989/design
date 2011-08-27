@@ -11,6 +11,7 @@
 							for(var i=0;i<=2;i++){// i<=MENÜ SZÁM
 								$('li#l_'+i).removeClass('akt');
 								$('a#a_'+i).removeClass('akt');
+								$('a#a_'+i).removeClass('aktual');
 								$('li#l_'+i).addClass('sima');
 								$('a#a_'+i).addClass('sima');
 							}
@@ -19,7 +20,7 @@
 						function valt(szam){
 							clear();
 							$('li#l_'+szam).addClass('akt');
-							$('a#a_'+szam).addClass('akt');
+							$('a#a_'+szam).addClass('aktual');
 						}
 						
 						// Futás
@@ -41,7 +42,6 @@
 								function () {
 									var mely=$(this).attr('id');
 									$('a#a_'+mely[2]).removeClass('akt');
-									$('a#a_'+mely[2]).addClass('sima');
 								}
 							);
 							
