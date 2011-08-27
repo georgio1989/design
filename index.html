@@ -3,13 +3,53 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" media="screen" href="style.css" type="text/css">
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
         <title>Kezdőlap</title>
         <script type="text/javascript">
+						// Menü elemek resetelése
+						function clear(){
+							for(var i=0;i<=2;i++){// i<=MENÜ SZÁM
+								$('li#l_'+i).removeClass('akt');
+								$('a#a_'+i).removeClass('akt');
+								$('li#l_'+i).addClass('sima');
+								$('a#a_'+i).addClass('sima');
+							}
+						}
+						// Menü váltás
+						function valt(szam){
+							clear();
+							$('li#l_'+szam).addClass('akt');
+							$('a#a_'+szam).addClass('akt');
+						}
+						
+						// Futás
             $(document).ready(function() {
 							var x=$('div#fo_doboz').height();
 							$('div#tartalom').css('height',x+100);
 							$('div#fo_elvalaszto').css('height',x+79);
+							valt(0);
+							$("li").hover(
+								function () {
+									var mely=$(this).attr('id');
+									$('a#a_'+mely[2]).addClass('akt');
+								}, 
+								function () {
+									var mely=$(this).attr('id');
+									$('a#a_'+mely[2]).removeClass('akt');
+									$('a#a_'+mely[2]).addClass('sima');
+								}
+							);
+							$("input.keres_txt").focus(function() {
+								$(this).val('');
+							});
+							$("input.keres_txt").focusout(function() {
+								var ertek=$(this).val();
+								if(ertek==''){
+									$(this).val('Keresés');
+								}else{
+									$(this).val(ertek);
+								}
+							});
             });
         </script>
     </head>
@@ -19,9 +59,9 @@
 					<!-- Menü -->
 					<div id="menu">
 						<ul>
-							<li class="sima"><a href="#">Kezdőlap</a></li>
-							<li class="akt"><a href="#" class="akt">Kapcsolat</a></li>
-							<li class="sima"><a href="#">Információk</a></li>
+							<li class="akt" id="l_0"><a id="a_0" href="#" class=""  onclick="valt(0)" >Kezdőlap</a></li>
+							<li class="sima" id="l_1"><a id="a_1" href="#" class="" onclick="valt(1)" >Kapcsolat</a></li>
+							<li class="sima" id="l_2"><a id="a_2" href="#" class="" onclick="valt(2)" >Információk</a></li>
 						</ul>
 						<div class="search">
 							<form method="post">
