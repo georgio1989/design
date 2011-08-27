@@ -321,9 +321,6 @@ body{
 	float:right;
 }
 /***************************/
-#lab ul{
-	/*margin-left:-190px;*/
-}
 #lab a,#lab a.ala,#lab a.kuls{
 	color:#ecedc2;
 	text-decoration:none;
@@ -337,6 +334,7 @@ body{
 }
 #lab a.ala{
 	color:#f6f786;
+	font-size:12px;
 }
 #lab a:hover{
 	color:#fff;
@@ -344,9 +342,9 @@ body{
 }
 #lab li{
 	list-style-image:url("img/ico1.png");
-	margin:5px;
+	margin:2px;
 }
 #lab li.al{
 	list-style-image:url("img/ico2.png");
-	margin:5px 0px 5px 10px;
+	margin:1px 0px 1px 10px;
 }
