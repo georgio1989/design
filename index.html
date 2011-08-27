@@ -28,7 +28,7 @@
 							$('div#tartalom').css('height',x+100);
 							$('div#fo_elvalaszto').css('height',x+79);
 							valt(0);
-							$("li").hover(
+							$("li.m").hover(
 								function () {
 									var mely=$(this).attr('id');
 									$('a#a_'+mely[2]).addClass('akt');
@@ -39,6 +39,8 @@
 									$('a#a_'+mely[2]).addClass('sima');
 								}
 							);
+							
+							// Kereső szövegének dinamizálása
 							$("input.keres_txt").focus(function() {
 								$(this).val('');
 							});
@@ -50,6 +52,7 @@
 									$(this).val(ertek);
 								}
 							});
+							
             });
         </script>
     </head>
@@ -59,9 +62,9 @@
 					<!-- Menü -->
 					<div id="menu">
 						<ul>
-							<li class="akt" id="l_0"><a id="a_0" href="#" class=""  onclick="valt(0)" >Kezdőlap</a></li>
-							<li class="sima" id="l_1"><a id="a_1" href="#" class="" onclick="valt(1)" >Kapcsolat</a></li>
-							<li class="sima" id="l_2"><a id="a_2" href="#" class="" onclick="valt(2)" >Információk</a></li>
+							<li class="m" id="l_0"><a id="a_0" href="#" class=""  onclick="valt(0)" >Kezdőlap</a></li>
+							<li class="m" id="l_1"><a id="a_1" href="#" class="" onclick="valt(1)" >Kapcsolat</a></li>
+							<li class="m" id="l_2"><a id="a_2" href="#" class="" onclick="valt(2)" >Információk</a></li>
 						</ul>
 						<div class="search">
 							<form method="post">
