@@ -1,7 +1,6 @@
 /* Nagy divek formázása*/
 body{
 	background-color:#fff;
-	background-image:url("img/bg_racs.png");
 	margin:0px;
 	color:#fff;
 }
@@ -15,12 +14,26 @@ body{
 	height:746px;
 	background-image:url("img/bg_effect.png");
 	position:absolute;
+}#body_racs{
+	min-width:900px;
+	width:100%;
+	height:1px;
+	background-image:url("img/bg_racs.png");
+	position:absolute;
 }
 #body_eff_tuk{
 	width:900px;
 	height:100px;
 	margin:0px auto;
 	background-image:url("img/tukor.png");
+}
+#body_eff_tuk_r{
+	min-width:900px;
+	width:100%;
+	height:100px;
+	margin:0px auto;
+	background-image:url("img/tukor_r.png");
+	margin-top:13px;
 }
 #menu{
 	width:900px;
