@@ -390,6 +390,10 @@ body{
 	background-image: url("img/tb_title_bg.png");
 	border: 1px dashed #d6e3f0;
 	margin: 0px 0px 5px 0px;
+	-moz-box-shadow: 2px 2px 10px #333;
+	-webkit-box-shadow: 2px 2px 10px #333;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
 }
 .table_f .tr,.table_a .tr{
 	clear:both;
@@ -402,6 +406,10 @@ body{
 	border: 1px dotted white;
 	margin:2px;
 	padding:5px;
+	-moz-box-shadow: 2px 2px 10px #333;
+	-webkit-box-shadow: 2px 2px 10px #333;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
 }
 .table_f .atten{
 	background-image: url("img/tb_tde_bg.png");
@@ -423,7 +431,33 @@ body{
 	background-image: url("img/tb_td2_bg.png");
 	color:#cfc;
 }
+.table_a input.sima{
+	width:358px;
+	height:29px;
+	margin:-15px -5px -5px -5px;
+	padding:0px;
+	background-color:#399;
+	border: 0px solid white;
+	color:#b4f5f5;
+}
+.table_a input.bevisz{
+	width:100px;
+	height:30px;
+	margin:10px 5px 10px 420px;
+	padding:0px;
+	background-color:#399;
+	border: 1px solid #4b8aa4;
+	color:#b4f5f5;
+	background-image: url("img/but_bg.png");
+	-moz-box-shadow: 2px 2px 10px #333;
+	-webkit-box-shadow: 2px 2px 10px #333;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
 
+}
+.table_a input.bevisz:hover{
+	background-image: url("img/but_bg_h.png");
+}
 /* táblában a cellák szélesség/hosszuság szabályozása
 	 egy külső diven át (styler) */
 .styler .table_f .td,.styler .table_f .atten{
