@@ -372,3 +372,48 @@ body{
 	list-style-image:url("img/ico2.png");
 	margin:1px 0px 1px 10px;
 }
+
+/*	Táblázat emulálás divekkel*/
+.table{
+	width:630px;
+	margin: 10px 30px 10px 30px;
+}
+.table .title,.table .foot{
+	width:100%;
+	text-align:center;
+	color: #e16a6a;
+	height: 20px;
+	padding-top:5px;
+	font-size:15px;
+	font-family:arial;
+	font-weight:bold;
+	background-image: url("img/tb_title_bg.png");
+	border: 1px dashed #d6e3f0;
+	margin: 0px 0px 5px 0px;
+}
+.table .tr{
+	clear:both;
+	padding-left:7px;
+	width:100%;
+}
+.table .td,.table .atten{
+	float:left;
+	width:22%;
+	height:20px;
+	background-image: url("img/tb_td_bg.png");
+	border: 1px dotted white;
+	margin:2px;
+	padding:5px;
+}
+.table .atten{
+	background-image: url("img/tb_tde_bg.png");
+	color:#fcc;
+}
+.table .foot{
+	text-align:right;
+	padding-right:10px;
+	font-style:italic;
+	color:#67b9e0;
+	font-size:12px;
+	margin: 5px 0px 0px 0px;
+}
