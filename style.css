@@ -198,8 +198,8 @@ body{
 	left:33px;
 	-moz-box-shadow: 2px 10px 15px #333;
 	-webkit-box-shadow: 2px 10px 15px #333;
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
 }
 .cetli input.text{
 	background-color:#778695;
