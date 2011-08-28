@@ -374,14 +374,14 @@ body{
 }
 
 /*	Táblázat emulálás divekkel*/
-.table{
+.table_f, .table_a{
 	width:630px;
-	margin: 10px 30px 10px 30px;
+	margin: 25px 30px 25px 30px;
 }
-.table .title,.table .foot{
+.table_a .title,.table_a .foot, .table_f .title,.table_f .foot{
 	width:100%;
 	text-align:center;
-	color: #e16a6a;
+	color: #99ccff;
 	height: 20px;
 	padding-top:5px;
 	font-size:15px;
@@ -391,29 +391,50 @@ body{
 	border: 1px dashed #d6e3f0;
 	margin: 0px 0px 5px 0px;
 }
-.table .tr{
+.table_f .tr,.table_a .tr{
 	clear:both;
 	padding-left:7px;
 	width:100%;
 }
-.table .td,.table .atten{
+.table_f .td,.table_f .atten,.table_a .td_c,.table_a .td_t{
 	float:left;
-	width:22%;
-	height:20px;
 	background-image: url("img/tb_td_bg.png");
 	border: 1px dotted white;
 	margin:2px;
 	padding:5px;
 }
-.table .atten{
+.table_f .atten{
 	background-image: url("img/tb_tde_bg.png");
 	color:#fcc;
 }
-.table .foot{
+.table_f .foot, .table_a .foot{
 	text-align:right;
 	padding-right:10px;
 	font-style:italic;
 	color:#67b9e0;
 	font-size:12px;
 	margin: 5px 0px 0px 0px;
+}
+/*	Táblázat emulálás divekkel*/
+.table_a .tr{
+	padding-left:25px;
+}
+.table_a .td_t{
+	background-image: url("img/tb_td2_bg.png");
+	color:#cfc;
+}
+
+/* táblában a cellák szélesség/hosszuság szabályozása
+	 egy külső diven át (styler) */
+.styler .table_f .td,.styler .table_f .atten{
+	width:22%;
+	height:20px;
+}
+.styler2 .table_a .td_c{
+	width:200px;
+	height:20px;
+}
+.styler2 .table_a .td_t{
+	width:350px;
+	height:20px;
 }
